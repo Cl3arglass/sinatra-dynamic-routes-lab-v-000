@@ -35,7 +35,7 @@ class App < Sinatra::Base
     when "divide"
       @operator = "/"
     end
-    
+
     @solution = params[:number1].to_i.send(@operator, params[:number2].to_i)
     "#{@solution}"
   end
