@@ -23,6 +23,10 @@ class App < Sinatra::Base
    "#{@sentence}."
   end
 
+  get '/:operation/:number1/:number2' do
+    "#{params[:number1].:operation(:number2)}"
+  end
+
 
 
 
